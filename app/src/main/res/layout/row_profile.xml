@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="profileRowModel" type="com.dessapplication.app.modules.profile.data.model.ProfileRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacklili"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumnlili"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleorange_400cornerRadius">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtLili"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginEnd="@dimen/_67pxh"
+                android:layout_marginStart="@dimen/_67pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:singleLine="true"
+                android:text="@{profileRowModel.txtLili}"
+                style="@style/txtPoppinsbold16_1" tools:text="@string/lbl_lili"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/frameStackellipseoneOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_69pxv"
+            android:layout_marginEnd="@dimen/_10pxh" android:layout_width="@dimen/_62pxh">
+            <View
+                android:background="@drawable/rectangle_gradient_s_orange_50_e_amber_200_radius_31"
+                android:id="@+id/viewEllipseOneOne"
+                android:layout_gravity="bottom|start"
+                android:layout_height="@dimen/_62pxh"
+                android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_62pxh"/>
+            <ImageView android:id="@+id/imageEight"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_62pxh"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="@dimen/_62pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_7_62x63}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_7_62x63"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>

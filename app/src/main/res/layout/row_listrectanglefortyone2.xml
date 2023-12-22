@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectanglefortyone2RowModel" type="com.dessapplication.app.modules.profilebookmarkanak.data.model.Listrectanglefortyone2RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectanglefortyone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyleorange_50cornerRadius">
+        <FrameLayout android:id="@+id/frameStackrectanglefortyone"
+            android:layout_height="@dimen/_148pxv"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginStart="@dimen/_14pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="@dimen/_120pxh" style="@style/groupStylewhite_1">
+            <ImageView android:id="@+id/imageRectangleFortyOne"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_135pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="@dimen/_109pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_rectangle30}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle30"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnprice"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_14pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_weight="0.57" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtPrice"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@{listrectanglefortyone2RowModel.txtPrice}"
+                style="@style/txtPoppinsbold12" tools:text="@string/lbl_langit_biru"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKaryaWulan"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{listrectanglefortyone2RowModel.txtKaryaWulan}"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_karya_wulan"/>
+            <TextView android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:text="@{listrectanglefortyone2RowModel.txtDescription}"
+                style="@style/txtPoppinsregular8" tools:text="@string/msg_lorem_ipsum_dol"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGroupFiftySeven"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingBottom="@dimen/_1pxv"
+                android:paddingEnd="@dimen/_6pxh"
+                android:paddingStart="@dimen/_6pxh"
+                android:paddingTop="@dimen/_2pxv"
+                android:singleLine="true"
+                android:text="@{listrectanglefortyone2RowModel.txtGroupFiftySeven}"
+                style="@style/txtSolidRounded_2" tools:text="@string/lbl_baca_sekarang"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

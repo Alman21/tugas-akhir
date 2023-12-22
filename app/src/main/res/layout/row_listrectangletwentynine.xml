@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listrectangletwentynineRowModel" type="com.dessapplication.app.modules.rangkumankaryaautorvidio.data.model.ListrectangletwentynineRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowrectangletwentynine"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" style="@style/groupStyleorange_50cornerRadius">
+        <FrameLayout android:id="@+id/frameStackrectangletwentynine"
+            android:layout_height="@dimen/_83pxv"
+            android:layout_marginBottom="@dimen/_9pxv"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="@dimen/_134pxh" style="@style/groupStylewhite_1">
+            <ImageView android:id="@+id/imageRectangleTwentyNine"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_73pxh"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_123pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_rectangle29}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle29"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnanakcerdas"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_6pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_weight="0.53" android:layout_width="0dp" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAnakCerdas"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_6pxh"
+                android:singleLine="true"
+                android:text="@{listrectangletwentynineRowModel.txtAnakCerdas}"
+                style="@style/txtPoppinssemibold12" tools:text="@string/lbl_anak_cerdas2"/>
+            <TextView android:id="@+id/txtLoremipsumdol"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:text="@{listrectangletwentynineRowModel.txtLoremipsumdol}"
+                style="@style/txtPoppinsregular8" tools:text="@string/msg_lorem_ipsum_dol2"/>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtGroupEighty"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingBottom="@dimen/_1pxv"
+                android:paddingEnd="@dimen/_5pxh"
+                android:paddingStart="@dimen/_5pxh"
+                android:paddingTop="@dimen/_2pxv"
+                android:singleLine="true"
+                android:text="@{listrectangletwentynineRowModel.txtGroupEighty}"
+                style="@style/txtSolidRounded_3" tools:text="@string/lbl_nonton_sekarang"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

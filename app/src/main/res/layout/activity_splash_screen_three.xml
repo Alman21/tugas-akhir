@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenThreeVM" type="com.dessapplication.app.modules.splashscreenthree.data.viewmodel.SplashScreenThreeVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearSplashScreenT"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtLewati"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_7pxh"
+            android:singleLine="true"
+            android:text="@{splashScreenThreeVM.splashScreenThreeModel.txtLewati}"
+            style="@style/txtPoppinsregular14" tools:text="@string/lbl_lewati"/>
+        <ImageView android:id="@+id/imageFour"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_280pxh"
+            android:layout_marginEnd="@dimen/_38pxh"
+            android:layout_marginStart="@dimen/_38pxh"
+            android:layout_marginTop="@dimen/_58pxv"
+            android:layout_width="@dimen/_265pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_4}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_4"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtYukbacabuat"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_55pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:text="@{splashScreenThreeVM.splashScreenThreeModel.txtYukbacabuat}"
+            style="@style/txtPoppinsbold21" tools:text="@string/msg_yuk_baca_buat"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtHanyadiCosmob"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_12pxh"
+            android:singleLine="true"
+            android:text="@{splashScreenThreeVM.splashScreenThreeModel.txtHanyadiCosmob}"
+            style="@style/txtPoppinsbold24_1" tools:text="@string/msg_hanya_di_cosmob"/>
+        <LinearLayout
+            android:id="@+id/linearColumnberikutnya"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnBerikutnya"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_8pxh"
+                android:paddingBottom="@dimen/_16pxv"
+                android:layout_marginLeft="95dp"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_16pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_berikutnya"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded" tools:text="@string/lbl_berikutnya"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageSettings"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_6pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_61pxv"
+            android:layout_width="@dimen/_55pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_settings"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_settings"/>
+    </LinearLayout>
+</layout>

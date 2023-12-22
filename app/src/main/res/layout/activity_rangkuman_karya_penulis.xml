@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="rangkumanKaryaPenulisVM" type="com.dessapplication.app.modules.rangkumankaryapenulis.data.viewmodel.RangkumanKaryaPenulisVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearRangkumanKarya"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnstatusbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <ImageView android:gravity="start"
+                android:id="@+id/imageStatusBar"
+                android:layout_height="@dimen/_1pxh"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_statusbar_1x360"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_statusbar_1x360"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_26pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowOne"
+                    android:layout_height="@dimen/_2pxh"
+                    android:layout_marginBottom="@dimen/_83pxv"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    android:layout_width="@dimen/_15pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrow1"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnellipseone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_101pxh"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <FrameLayout android:id="@+id/frameStackellipseone"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_75pxv" android:layout_width="@dimen/_76pxh">
+                        <View
+                            android:background="@drawable/rectangle_gradient_s_orange_400_e_deep_orange_400_radius_31"
+                            android:id="@+id/viewEllipseOne"
+                            android:layout_gravity="bottom|center"
+                            android:layout_height="@dimen/_62pxh"
+                            android:layout_marginEnd="@dimen/_8pxh"
+                            android:layout_marginStart="@dimen/_6pxh"
+                            android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_62pxh"/>
+                        <ImageView android:id="@+id/imageOne"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_70pxv"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            imageRes="@{@drawable/img_1}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_1"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtKaryaxx"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_11pxh"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_width="match_parent"
+                        android:lineSpacingExtra="@dimen/_6pxh"
+                        android:singleLine="true"
+                        android:text="@{rangkumanKaryaPenulisVM.rangkumanKaryaPenulisModel.txtKaryaxx}"
+                        style="@style/txtPoppinssemibold12" tools:text="@string/lbl_karya_xx"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/black_900"
+            android:id="@+id/lineLineEleven"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_1pxv" android:layout_width="@dimen/_315pxh"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:gravity="center_horizontal"
+            android:id="@+id/recyclerListrectanglefortyone"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_49pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            itemSpace="@{@dimen/_16pxh}" tools:itemCount="5" tools:listitem="@layout/row_listrectanglefortyone"/>
+    </LinearLayout>
+</layout>

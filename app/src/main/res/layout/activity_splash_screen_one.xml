@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashScreenOneVM" type="com.dessapplication.app.modules.splashscreenone.data.viewmodel.SplashScreenOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameSplashScreenO"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageCosmopilteTwo"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_cosmopilte02}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_cosmopilte02"/>
+        <ImageView android:id="@+id/imageCosmopilteThree"
+            android:layout_gravity="top|center"
+            android:layout_height="@dimen/_277pxh"
+            android:layout_marginBottom="@dimen/_176pxv"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_176pxv"
+            android:layout_width="@dimen/_349pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_cosmopilte03}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_cosmopilte03"/>
+    </FrameLayout>
+</layout>

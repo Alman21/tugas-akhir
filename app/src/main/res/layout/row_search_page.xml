@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="searchPageRowModel" type="com.dessapplication.app.modules.searchpage.data.model.SearchPageRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackfour"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+        <ImageView android:id="@+id/imageFour"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_116pxh"
+            android:layout_marginBottom="@dimen/_21pxv"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="@dimen/_117pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_4_116x117}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_4_116x117"/>
+        <LinearLayout android:id="@+id/linearColumnkeluaran"
+            android:layout_gravity="bottom|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_31pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtKeluaran"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{searchPageRowModel.txtKeluaran}"
+                style="@style/txtPoppinssemibold10" tools:text="@string/lbl_keluaran"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtTerbaru"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2pxh"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_5pxh"
+                android:singleLine="true"
+                android:text="@{searchPageRowModel.txtTerbaru}"
+                style="@style/txtPoppinssemibold10" tools:text="@string/lbl_terbaru"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

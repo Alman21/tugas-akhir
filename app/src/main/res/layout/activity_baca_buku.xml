@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bacaBukuVM" type="com.dessapplication.app.modules.bacabuku.data.viewmodel.BacaBukuVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearBacaBuku"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleamber_200">
+        <ImageView android:id="@+id/imageStatusBar"
+            android:layout_height="@dimen/_15pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_statusbar_1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_statusbar_1"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumn16142235671"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleorange_50">
+            <FrameLayout android:gravity="start"
+                android:id="@+id/frameStack16142235671"
+                android:layout_height="@dimen/_584pxv" android:layout_width="match_parent">
+                <ImageView android:id="@+id/image16142235671"
+                    android:layout_gravity="start"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_16142235671}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_16142235671"/>
+                <LinearLayout android:id="@+id/linearRowarrowone"
+                    android:layout_gravity="top|end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_11pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowOne"
+                        android:layout_height="@dimen/_2pxh"
+                        android:layout_marginBottom="@dimen/_19pxv"
+                        android:layout_marginTop="@dimen/_13pxv"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrow1"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrow1"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_white_a700_radius_17"
+                        android:id="@+id/btnVolumeoff"
+                        android:layout_height="@dimen/_34pxh"
+                        android:layout_marginStart="@dimen/_275pxh"
+                        android:layout_width="@dimen/_34pxh"
+                        android:paddingHorizontal="@dimen/_6pxh"
+                        android:paddingVertical="@dimen/_6pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_volumeoff" tools:ignore="ContentDescription"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_28pxh"
+                android:layout_marginStart="@dimen/_28pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_10pxh"
+                android:text="@{bacaBukuVM.bacaBukuModel.txtDescription}"
+                style="@style/txtPoppinssemibold12" tools:text="@string/msg_lorem_ipsum_dol"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
